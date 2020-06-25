@@ -1,0 +1,6 @@
+[nginx-http-auth]
+enabled = true
+port    = http,https
+logpath = %(nginx_error_log)s
+action   = cloudflare-apiv4
+           iptables-allports
